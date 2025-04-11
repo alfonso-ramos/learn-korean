@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Hangul from './pages/Hangul';
 import Batchim from './pages/Batchim';
 import VocabularioBasico from './pages/VocabularioBasico';
+import GramaticaBasica from './pages/GramaticaBasica';
 
 const App: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -191,19 +192,19 @@ const App: React.FC = () => {
         </nav>
 
         <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <Routes>
+        <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/hangul" element={<Hangul />} />
             <Route path="/batchim" element={<Batchim />} />
             <Route path="/vocabulario-basico" element={<VocabularioBasico />} />
-            <Route path="/gramatica-basica" element={<div>Gramática Básica (Próximamente)</div>} />
+            <Route path="/gramatica-basica" element={<GramaticaBasica />} />
             <Route path="/gramatica-intermedia" element={<div>Gramática Intermedia (Próximamente)</div>} />
             <Route path="/vocabulario-intermedio" element={<div>Vocabulario Intermedio (Próximamente)</div>} />
             <Route path="/expresiones-comunes" element={<div>Expresiones Comunes (Próximamente)</div>} />
             <Route path="/gramatica-avanzada" element={<div>Gramática Avanzada (Próximamente)</div>} />
             <Route path="/vocabulario-avanzado" element={<div>Vocabulario Avanzado (Próximamente)</div>} />
             <Route path="/expresiones-idiomaticas" element={<div>Expresiones Idiomáticas (Próximamente)</div>} />
-          </Routes>
+        </Routes>
         </main>
       </div>
     </Router>

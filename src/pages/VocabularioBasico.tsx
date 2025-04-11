@@ -296,6 +296,236 @@ const VocabularioBasico: React.FC = () => {
           }
         }
       ]
+    },
+    {
+      title: "transporte",
+      description: "Vocabulario relacionado con el transporte y direcciones",
+      items: [
+        {
+          korean: "버스",
+          romanization: "beoseu",
+          spanish: "Autobús",
+          example: {
+            korean: "버스를 타요",
+            romanization: "beoseureul tayo",
+            spanish: "Tomo el autobús"
+          }
+        },
+        {
+          korean: "지하철",
+          romanization: "jihacheol",
+          spanish: "Metro",
+          example: {
+            korean: "지하철로 가요",
+            romanization: "jihacheollo gayo",
+            spanish: "Voy en metro"
+          }
+        },
+        {
+          korean: "택시",
+          romanization: "taeksi",
+          spanish: "Taxi",
+          example: {
+            korean: "택시를 불러요",
+            romanization: "taeksireul bulleoyo",
+            spanish: "Llamo un taxi"
+          }
+        },
+        {
+          korean: "공항",
+          romanization: "gonghang",
+          spanish: "Aeropuerto",
+          example: {
+            korean: "공항에 가요",
+            romanization: "gonghange gayo",
+            spanish: "Voy al aeropuerto"
+          }
+        }
+      ]
+    },
+    {
+      title: "compras",
+      description: "Vocabulario para ir de compras y negociar precios",
+      items: [
+        {
+          korean: "가게",
+          romanization: "gage",
+          spanish: "Tienda",
+          example: {
+            korean: "가게에 가요",
+            romanization: "gagee gayo",
+            spanish: "Voy a la tienda"
+          }
+        },
+        {
+          korean: "얼마예요?",
+          romanization: "eolmayeyo?",
+          spanish: "¿Cuánto cuesta?",
+          example: {
+            korean: "이거 얼마예요?",
+            romanization: "igeo eolmayeyo?",
+            spanish: "¿Cuánto cuesta esto?"
+          }
+        },
+        {
+          korean: "비싸요",
+          romanization: "bissayo",
+          spanish: "Es caro",
+          example: {
+            korean: "이거 너무 비싸요",
+            romanization: "igeo neomu bissayo",
+            spanish: "Esto es muy caro"
+          }
+        },
+        {
+          korean: "싸요",
+          romanization: "ssayo",
+          spanish: "Es barato",
+          example: {
+            korean: "여기서 사면 싸요",
+            romanization: "yeogiseo samyeon ssayo",
+            spanish: "Si lo compras aquí, es barato"
+          }
+        }
+      ]
+    },
+    {
+      title: "restaurante",
+      description: "Vocabulario para pedir comida y en restaurantes",
+      items: [
+        {
+          korean: "메뉴",
+          romanization: "menyu",
+          spanish: "Menú",
+          example: {
+            korean: "메뉴 주세요",
+            romanization: "menyu juseyo",
+            spanish: "El menú, por favor"
+          }
+        },
+        {
+          korean: "주문",
+          romanization: "jumun",
+          spanish: "Pedido",
+          example: {
+            korean: "주문할게요",
+            romanization: "jumunhalgeyo",
+            spanish: "Voy a hacer el pedido"
+          }
+        },
+        {
+          korean: "맵다",
+          romanization: "maepda",
+          spanish: "Picante",
+          example: {
+            korean: "너무 맵다",
+            romanization: "neomu maepda",
+            spanish: "Es muy picante"
+          }
+        },
+        {
+          korean: "계산",
+          romanization: "gyesan",
+          spanish: "Cuenta",
+          example: {
+            korean: "계산해 주세요",
+            romanization: "gyesanhae juseyo",
+            spanish: "La cuenta, por favor"
+          }
+        }
+      ]
+    },
+    {
+      title: "hospital",
+      description: "Vocabulario para situaciones médicas y hospitales",
+      items: [
+        {
+          korean: "병원",
+          romanization: "byeongwon",
+          spanish: "Hospital",
+          example: {
+            korean: "병원에 가요",
+            romanization: "byeongwone gayo",
+            spanish: "Voy al hospital"
+          }
+        },
+        {
+          korean: "의사",
+          romanization: "uisa",
+          spanish: "Doctor",
+          example: {
+            korean: "의사를 만나요",
+            romanization: "uisareul mannayo",
+            spanish: "Voy a ver al doctor"
+          }
+        },
+        {
+          korean: "아프다",
+          romanization: "apeuda",
+          spanish: "Doler",
+          example: {
+            korean: "배가 아파요",
+            romanization: "baega apayo",
+            spanish: "Me duele el estómago"
+          }
+        },
+        {
+          korean: "약",
+          romanization: "yak",
+          spanish: "Medicina",
+          example: {
+            korean: "약을 먹어요",
+            romanization: "yageul meogeoyo",
+            spanish: "Tomo medicina"
+          }
+        }
+      ]
+    },
+    {
+      title: "hotel",
+      description: "Vocabulario para hoteles y alojamiento",
+      items: [
+        {
+          korean: "호텔",
+          romanization: "hotel",
+          spanish: "Hotel",
+          example: {
+            korean: "호텔에 도착했어요",
+            romanization: "hotere dochakhaesseoyo",
+            spanish: "Llegué al hotel"
+          }
+        },
+        {
+          korean: "체크인",
+          romanization: "chekeuin",
+          spanish: "Check-in",
+          example: {
+            korean: "체크인 하세요",
+            romanization: "chekeuin haseyo",
+            spanish: "Haga el check-in"
+          }
+        },
+        {
+          korean: "방",
+          romanization: "bang",
+          spanish: "Habitación",
+          example: {
+            korean: "방이 어디예요?",
+            romanization: "bangi eodieyo?",
+            spanish: "¿Dónde está mi habitación?"
+          }
+        },
+        {
+          korean: "키",
+          romanization: "ki",
+          spanish: "Llave",
+          example: {
+            korean: "방 키 주세요",
+            romanization: "bang ki juseyo",
+            spanish: "La llave de la habitación, por favor"
+          }
+        }
+      ]
     }
   ];
 
