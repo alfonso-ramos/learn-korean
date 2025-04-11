@@ -1,92 +1,162 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <div className="max-w-6xl mx-auto">
-      {/* Hero Section */}
-      <section className="text-center py-16 px-4 animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold text-indigo-600 mb-6 animate-slide-up">
-          Aprende Coreano Fácil
-        </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
-          Tu plataforma interactiva para aprender coreano de manera efectiva y divertida.
-          Todo el contenido es completamente gratuito.
-        </p>
-      </section>
+    <div className="text-center">
+      <h1 className="text-4xl font-bold text-gray-900 mb-8">Aprende Coreano</h1>
+      <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+        Explora el fascinante mundo del idioma coreano. Comienza tu viaje desde lo básico
+        y avanza hasta dominar el idioma.
+      </p>
 
-      {/* Features Grid */}
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-        <Link to="/apuntes" className="group animate-slide-up" style={{ animationDelay: '0.4s' }}>
-          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:scale-105">
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="p-3 bg-indigo-100 rounded-lg group-hover:rotate-12 transition-transform">
-                <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <h2 className="text-xl font-semibold text-gray-800 group-hover:text-indigo-600 transition-colors">
-                Apuntes
-              </h2>
-            </div>
-            <p className="text-gray-600">
-              Accede a apuntes detallados y bien organizados sobre gramática, vocabulario y más.
-            </p>
-          </div>
-        </Link>
-
-        <Link to="/juegos" className="group animate-slide-up" style={{ animationDelay: '0.6s' }}>
-          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:scale-105">
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="p-3 bg-purple-100 rounded-lg group-hover:rotate-12 transition-transform">
-                <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
-                </svg>
-              </div>
-              <h2 className="text-xl font-semibold text-gray-800 group-hover:text-purple-600 transition-colors">
-                Juegos
-              </h2>
-            </div>
-            <p className="text-gray-600">
-              Aprende mientras te diviertes con nuestros juegos interactivos y ejercicios.
-            </p>
-          </div>
-        </Link>
-
-        <Link to="/recursos" className="group animate-slide-up" style={{ animationDelay: '0.8s' }}>
-          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:scale-105">
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="p-3 bg-pink-100 rounded-lg group-hover:rotate-12 transition-transform">
-                <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                </svg>
-              </div>
-              <h2 className="text-xl font-semibold text-gray-800 group-hover:text-pink-600 transition-colors">
-                Recursos
-              </h2>
-            </div>
-            <p className="text-gray-600">
-              Encuentra recursos adicionales, herramientas y materiales de apoyo para tu aprendizaje.
-            </p>
-          </div>
-        </Link>
-      </section>
-
-      {/* Call to Action */}
-      <section className="text-center py-16 px-4 animate-fade-in" style={{ animationDelay: '1s' }}>
-        <div className="bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl p-8 text-white hover:scale-105 transition-transform duration-300">
-          <h2 className="text-2xl font-bold mb-4">¿Listo para comenzar?</h2>
-          <p className="mb-6 text-indigo-100">
-            Únete a nuestra comunidad de aprendices y comienza tu viaje hacia el dominio del coreano.
-          </p>
-          <Link 
-            to="/apuntes" 
-            className="inline-block bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-colors hover:scale-110"
+      {/* Nivel Principiante */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-gray-900 mb-8">Nivel Principiante</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <Link
+            to="/hangul"
+            className="bg-white rounded-xl shadow-sm p-8 text-center transform hover:scale-105 transition-transform duration-200"
           >
-            Comenzar Ahora
+            <div className="text-5xl mb-4 text-indigo-600">한글</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Hangul</h3>
+            <p className="text-gray-600">
+              Aprende el alfabeto coreano, uno de los sistemas de escritura más científicos del mundo.
+            </p>
+          </Link>
+
+          <Link
+            to="/batchim"
+            className="bg-white rounded-xl shadow-sm p-8 text-center transform hover:scale-105 transition-transform duration-200"
+          >
+            <div className="text-5xl mb-4 text-indigo-600">받침</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Batchim</h3>
+            <p className="text-gray-600">
+              Domina las consonantes finales y sus reglas de pronunciación en coreano.
+            </p>
+          </Link>
+
+          <Link
+            to="/vocabulario-basico"
+            className="bg-white rounded-xl shadow-sm p-8 text-center transform hover:scale-105 transition-transform duration-200"
+          >
+            <div className="text-5xl mb-4 text-indigo-600">단어</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Vocabulario Básico</h3>
+            <p className="text-gray-600">
+              Palabras y expresiones esenciales para comenzar a comunicarte en coreano.
+            </p>
+          </Link>
+
+          <Link
+            to="/gramatica-basica"
+            className="bg-white rounded-xl shadow-sm p-8 text-center transform hover:scale-105 transition-transform duration-200"
+          >
+            <div className="text-5xl mb-4 text-indigo-600">문법</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Gramática Básica</h3>
+            <p className="text-gray-600">
+              Fundamentos de la estructura gramatical del coreano.
+            </p>
           </Link>
         </div>
-      </section>
+      </div>
+
+      {/* Nivel Intermedio */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-gray-900 mb-8">Nivel Intermedio</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Link
+            to="/gramatica-intermedia"
+            className="bg-white rounded-xl shadow-sm p-8 text-center transform hover:scale-105 transition-transform duration-200"
+          >
+            <div className="text-5xl mb-4 text-indigo-600">문법</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Gramática Intermedia</h3>
+            <p className="text-gray-600">
+              Estructuras gramaticales más complejas y su uso en contextos reales.
+            </p>
+          </Link>
+
+          <Link
+            to="/vocabulario-intermedio"
+            className="bg-white rounded-xl shadow-sm p-8 text-center transform hover:scale-105 transition-transform duration-200"
+          >
+            <div className="text-5xl mb-4 text-indigo-600">단어</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Vocabulario Intermedio</h3>
+            <p className="text-gray-600">
+              Amplía tu vocabulario con palabras y expresiones más específicas.
+            </p>
+          </Link>
+
+          <Link
+            to="/expresiones-comunes"
+            className="bg-white rounded-xl shadow-sm p-8 text-center transform hover:scale-105 transition-transform duration-200"
+          >
+            <div className="text-5xl mb-4 text-indigo-600">표현</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Expresiones Comunes</h3>
+            <p className="text-gray-600">
+              Frases y expresiones utilizadas en situaciones cotidianas.
+            </p>
+          </Link>
+        </div>
+      </div>
+
+      {/* Nivel Avanzado */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-semibold text-gray-900 mb-8">Nivel Avanzado</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Link
+            to="/gramatica-avanzada"
+            className="bg-white rounded-xl shadow-sm p-8 text-center transform hover:scale-105 transition-transform duration-200"
+          >
+            <div className="text-5xl mb-4 text-indigo-600">문법</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Gramática Avanzada</h3>
+            <p className="text-gray-600">
+              Estructuras gramaticales complejas y su uso en contextos formales.
+            </p>
+          </Link>
+
+          <Link
+            to="/vocabulario-avanzado"
+            className="bg-white rounded-xl shadow-sm p-8 text-center transform hover:scale-105 transition-transform duration-200"
+          >
+            <div className="text-5xl mb-4 text-indigo-600">단어</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Vocabulario Avanzado</h3>
+            <p className="text-gray-600">
+              Vocabulario especializado y términos técnicos.
+            </p>
+          </Link>
+
+          <Link
+            to="/expresiones-idiomaticas"
+            className="bg-white rounded-xl shadow-sm p-8 text-center transform hover:scale-105 transition-transform duration-200"
+          >
+            <div className="text-5xl mb-4 text-indigo-600">관용어</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Expresiones Idiomáticas</h3>
+            <p className="text-gray-600">
+              Modismos y expresiones culturales del coreano.
+            </p>
+          </Link>
+        </div>
+      </div>
+
+      {/* Sección de Donaciones */}
+      <div className="mt-16 bg-yellow-50 rounded-xl p-8 max-w-2xl mx-auto">
+        <h2 className="text-2xl font-semibold text-gray-900 mb-4">¿Te gusta este proyecto?</h2>
+        <p className="text-gray-600 mb-6">
+          Si este sitio te ha ayudado a aprender coreano, considera apoyar su desarrollo
+          con una donación. Tu apoyo nos ayuda a seguir mejorando y agregando más contenido.
+        </p>
+        <a
+          href="https://www.buymeacoffee.com/ponchor"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+        >
+          <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm-1-5a1 1 0 102 0V7a1 1 0 10-2 0v4zm0 2a1 1 0 102 0 1 1 0 00-2 0z" />
+          </svg>
+          Apoya con un Café
+        </a>
+      </div>
     </div>
   );
 };
