@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @keyframes fadeIn {
   from {
@@ -27,4 +30,29 @@
 .animate-slide-up {
   animation: slideUp 0.8s ease-out forwards;
   opacity: 0;
+}
+
+/* Estilos para el juego de memoria */
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+/* Animación de voltear carta */
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.flip-animation {
+  animation: flip 0.5s ease-in-out;
 }

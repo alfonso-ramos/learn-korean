@@ -5,6 +5,7 @@ import Hangul from './pages/Hangul';
 import Batchim from './pages/Batchim';
 import VocabularioBasico from './pages/VocabularioBasico';
 import GramaticaBasica from './pages/GramaticaBasica';
+import MemoryGame from './pages/games/MemoryGame';
 
 const App: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -88,6 +89,14 @@ const App: React.FC = () => {
                       </Link>
                     </div>
                   </div>
+
+                  {/* Enlace directo a Juegos */}
+                  <Link
+                    to="/juegos"
+                    className="text-gray-500 inline-flex items-center px-1 pt-1 text-sm font-medium hover:text-gray-700"
+                  >
+                    Juegos
+                  </Link>
                 </div>
               </div>
 
@@ -187,12 +196,19 @@ const App: React.FC = () => {
                   </Link>
                 </div>
               </div>
+              {/* Enlace a Juegos en el menú móvil */}
+              <Link
+                to="/juegos"
+                className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300"
+              >
+                Juegos
+              </Link>
             </div>
           </div>
         </nav>
 
         <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        <Routes>
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/hangul" element={<Hangul />} />
             <Route path="/batchim" element={<Batchim />} />
@@ -204,7 +220,8 @@ const App: React.FC = () => {
             <Route path="/gramatica-avanzada" element={<div>Gramática Avanzada (Próximamente)</div>} />
             <Route path="/vocabulario-avanzado" element={<div>Vocabulario Avanzado (Próximamente)</div>} />
             <Route path="/expresiones-idiomaticas" element={<div>Expresiones Idiomáticas (Próximamente)</div>} />
-        </Routes>
+            <Route path="/juegos" element={<MemoryGame />} />
+          </Routes>
         </main>
       </div>
     </Router>
