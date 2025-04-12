@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Card, GameCategory, GameState } from '../../types/memoryGame';
+import { useState, useEffect } from 'react';
+import type { GameState } from '../../types/memoryGame';
 import { gameCategories } from '../../data/gameCategories';
 import { CategorySelector } from '../../components/games/CategorySelector';
 import { GameHeader } from '../../components/games/GameHeader';

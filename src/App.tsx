@@ -208,7 +208,7 @@ const App: React.FC = () => {
         </nav>
 
         <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <Routes>
+        <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/hangul" element={<Hangul />} />
             <Route path="/batchim" element={<Batchim />} />
@@ -221,7 +221,7 @@ const App: React.FC = () => {
             <Route path="/vocabulario-avanzado" element={<div>Vocabulario Avanzado (Próximamente)</div>} />
             <Route path="/expresiones-idiomaticas" element={<div>Expresiones Idiomáticas (Próximamente)</div>} />
             <Route path="/juegos" element={<MemoryGame />} />
-          </Routes>
+        </Routes>
         </main>
       </div>
     </Router>

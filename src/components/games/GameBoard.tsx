@@ -1,5 +1,4 @@
-import React from 'react';
-import { Card as CardType } from '../../types/memoryGame';
+import type { Card as CardType } from '../../types/memoryGame';
 import { Card } from './Card';
 
 interface GameBoardProps {

@@ -1,5 +1,4 @@
-import React from 'react';
-import { GameCategory } from '../../types/memoryGame';
+import type { GameCategory } from '../../types/memoryGame';
 
 interface CategorySelectorProps {
   categories: GameCategory[];
