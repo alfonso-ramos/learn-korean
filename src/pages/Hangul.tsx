@@ -1,4 +1,5 @@
 import React from 'react';
+import Recurso from '../components/Recurso';
 
 const Hangul: React.FC = () => {
   const consonantes = [
@@ -74,6 +75,14 @@ const Hangul: React.FC = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-semibold text-gray-900 mb-6">Recursos Adicionales</h2>
+        <Recurso 
+          nombre={"test"}
+          archivo={"public/Aprende Coreano.pdf"}
+        />
       </div>
 
       {/* Información adicional */}
