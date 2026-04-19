@@ -22,7 +22,8 @@ export function Card({ card, onCardClick }: CardProps) {
         {/* Cara trasera */}
         <div className={`card-face card-back ${card.isMatched ? 'bg-green-100' : ''}`}>
           <div className="card-content">
-            <div className="text-lg font-bold text-gray-800">{card.korean}</div>
+            {card.image && <img src={card.image} alt="test"  className='w-40'/> }
+            <div className="text-lg font-bold text-gray-800 mt-3">{card.korean}</div>
             <div className="text-sm text-gray-600">{card.spanish}</div>
           </div>
         </div>
